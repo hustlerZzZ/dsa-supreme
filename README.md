@@ -59,13 +59,13 @@ This repository is structured in a way that makes it easy to follow the progress
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/dsa-cpp.git
+    git clone https://github.com/your-username/dsa-supreme.git
     ```
 
 2. **Navigate to the folder**:
 
     ```bash
-    cd dsa-cpp
+    cd dsa-supreme
     ```
 
 3. **Compile and run a program**:
