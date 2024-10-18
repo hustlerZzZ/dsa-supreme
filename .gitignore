@@ -1,0 +1,15 @@
+# Windows executable
+*.exe
+
+# Linux/MacOS executable
+*.out
+*.o
+
+# Optionally, if you also want to ignore debug symbol files
+*.dSYM/
+*.stackdump
+
+# Common C++ IDE files
+.vscode/
+.idea/
+*.log
