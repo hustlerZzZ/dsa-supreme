@@ -23,8 +23,6 @@ void dutchNationalFlagCounter(vector<int> &arr)
         }
     }
 
-    cout << zero << " " << one << " " << two << endl;
-
     int counter = 0;
 
     while (zero)
