@@ -33,11 +33,22 @@ int main()
     // deleting the element
     arr.pop_back();
 
-    // Clearing the whole vector
-    arr.clear();
-
     // capacity of the vector
     cout << "Capacity of the vector : " << arr.capacity() << endl;
+
+    // Creating an iterator
+    vector<int>::iterator it = arr.begin();
+
+    while (it != arr.end())
+    {
+        cout << *it << " ";
+        it++;
+    }
+
+    cout << endl;
+
+    // Clearing the whole vector
+    arr.clear();
 
     // printing the size of the vector & vector
     cout << "Size of the vector : " << arr.size() << endl;
