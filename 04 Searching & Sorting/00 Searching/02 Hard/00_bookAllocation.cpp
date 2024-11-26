@@ -6,23 +6,22 @@
 
 using namespace std;
 
-// GFG : Allocate Minimum Pages (Medium)
-
-bool isPossibleSolution(vector<int> &arr, int n, int students, int sol)
+bool isPossible(vector<int> arr, int n, int m, int sol)
 {
     int pageSum = 0;
     int c = 1;
+
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > sol)
         {
             return false;
         }
-        if (arr[i] + pageSum > sol)
+        if (pageSum + arr[i] > sol)
         {
             c++;
             pageSum = arr[i];
-            if (c > students)
+            if (c > m)
                 return false;
         }
         else
@@ -34,10 +33,11 @@ bool isPossibleSolution(vector<int> &arr, int n, int students, int sol)
     return true;
 }
 
-int betterSolution(vector<int> &arr, int students)
+int findPages(vector<int> arr, int m)
 {
     int n = arr.size();
-    if (students > n)
+
+    if (n < m)
         return -1;
 
     int start = 0;
@@ -46,32 +46,26 @@ int betterSolution(vector<int> &arr, int students)
 
     while (end >= start)
     {
-        int mid = start + (end - start) / 2;
+        int mid = (start + end) >> 1;
 
-        if (isPossibleSolution(arr, n, students, mid))
+        if (isPossible(arr, n, m, mid))
         {
             ans = mid;
             end = mid - 1;
         }
         else
-        {
             start = mid + 1;
-        }
     }
 
     return ans;
 }
-
-// int bruteForce(vector<int> &arr, int target) {}
 
 int main()
 {
     vector<int> arr = {12, 34, 67, 90};
     int k = 2;
 
-    int res = betterSolution(arr, k);
-
-    cout << res << endl;
+    cout << findPages(arr, k);
 
     return 0;
 }
