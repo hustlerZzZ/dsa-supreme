@@ -32,37 +32,7 @@ double mySqrtUsingBinarySearch(int x)
         mid = start + (end - start) / 2;
     }
 
-    double sqrtAns = (double)ans;
-
-    // precision upto how many digits
-    int precision;
-    cout << "Enter the precision upto how many digits : " << endl;
-    cin >> precision;
-
-    double factor = 1;
-    double finalAns = sqrtAns;
-
-    for (int i = 0; i < precision; i++)
-    {
-        factor = factor / 10.0;
-
-        for (int j = 0; j < 10; j++)
-        {
-            double toAdd = j * factor;
-            double newAns = sqrtAns + toAdd;
-            if (newAns * newAns < x)
-            {
-                finalAns = sqrtAns + toAdd;
-            }
-            else
-            {
-                break;
-            }
-        }
-        sqrtAns = finalAns;
-    }
-
-    return finalAns;
+    return ans;
 }
 
 int main()
