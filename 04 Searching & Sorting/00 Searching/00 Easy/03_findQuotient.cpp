@@ -44,7 +44,7 @@ int findQuotient(int dividend, int divisor)
         {
             return mid;
         }
-        else if ((divisor * mid) < dividend)
+        else if ((divisor * mid) <= dividend)
         {
             ans = mid;
             start = mid + 1;

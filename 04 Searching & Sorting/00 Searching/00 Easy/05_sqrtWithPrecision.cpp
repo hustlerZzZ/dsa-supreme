@@ -56,6 +56,8 @@ double myPrecisionSqrt(int n)
     return sqrt;
 }
 
+// T.C : O(logn)
+// S.C : O(1)
 double BinarySearchWithPrecision(int n)
 {
     double start = 0;
