@@ -86,9 +86,11 @@ Feel free to fork this repository and contribute by submitting pull requests. If
 | Topic               | Status |
 | ------------------- | ------ |
 | Arrays              | ✅     |
+| Char Arrays         | ✅     |
 | STL                 | ✅     |
 | Searching           | ✅     |
-| Sorting             | ⏳     |
+| Sorting             | ✅     |
+| String              | ⏳     |
 | Linked Lists        | ⏳     |
 | Stacks & Queues     | ⏳     |
 | Trees               | ⏳     |
