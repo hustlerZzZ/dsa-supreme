@@ -90,7 +90,9 @@ Feel free to fork this repository and contribute by submitting pull requests. If
 | STL                 | ✅     |
 | Searching           | ✅     |
 | Sorting             | ✅     |
+| Char Arrays         | ✅     |
 | String              | ⏳     |
+| Pointers            | ⏳     |
 | Linked Lists        | ⏳     |
 | Stacks & Queues     | ⏳     |
 | Trees               | ⏳     |
